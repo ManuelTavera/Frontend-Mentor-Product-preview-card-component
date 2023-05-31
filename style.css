@@ -112,6 +112,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: var(--neutral-gray-blue);
   line-height: 1.5;
+  font-weight: 700;
 }
 
 .price {
@@ -157,4 +158,44 @@ body {
 
 .icon img {
   height: 20px;
+}
+
+.desktop-img{
+  display: block;
+ }
+ .mobile-img {
+  display: none;
+ }
+
+@media (max-width: 780px) {
+ .wrapper {
+  flex-direction: column;
+  max-width: 375px;
+  margin: 15px;
+  height: 650px;
+ }
+ .headline {
+  font-size: 2rem;
+ }
+ .img-container {
+  flex: 1 1 30%;
+ }
+ .information {
+  flex: 1 1 70%;
+  padding: 25px;
+ }
+ .desktop-img{
+  display: none;
+ }
+ .mobile-img {
+  display: block;
+ }
+ .offer {
+  font-size: 2rem;
+ }
+ .price-tag {
+  margin: 0;
+  margin-left: 20px;
+  margin-right: auto;
+ }
 }
