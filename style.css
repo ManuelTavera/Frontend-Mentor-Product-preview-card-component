@@ -1,3 +1,11 @@
+:root {
+    --primary-dark: hsl(158, 36%, 37%);
+    --primary-cream: hsl(30, 38%, 92%);
+    --neutral-dark-blue: hsl(212, 21%, 14%);
+    --neutral-gray-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --dark-green: hsl(158, 36%, 22%);
+}
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -25,7 +33,7 @@
     5. Improve text rendering
   */
   body {
-    line-height: 1.5;
+    line-height: 1;
     -webkit-font-smoothing: antialiased;
   }
   
@@ -57,3 +65,96 @@
   #root, #__next {
     isolation: isolate;
   }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-cream);
+}
+
+.wrapper {
+    background-color: var(--white);
+    display: flex;
+    height: 525px;
+    width: 700px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.img-container {
+    flex: 1 1 50%;
+}
+
+.information {
+    flex: 1 1 50%;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product {
+  font-size: 0.875rem;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--neutral-gray-blue);
+  font-weight: 700;
+}
+
+.headline {
+  font-family: 'Fraunces', serif;
+  font-size: 2.625rem;
+  color: var(--neutral-dark-blue);
+}
+
+.copy {
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--neutral-gray-blue);
+  line-height: 1.5;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.offer {
+  font-family: 'Fraunces', serif;
+  font-size: 2.625rem;
+  color: var(--primary-dark);
+}
+
+.price-tag {
+  font-family: 'Fraunces', serif;
+  font-size: 0.875rem;
+  margin: auto;
+  color: var(--neutral-gray-blue);
+  text-decoration: line-through;
+}
+
+.btn-checkout {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: var(--primary-dark);
+  color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.btn-checkout:hover {
+  background-color: var(--dark-green);
+  cursor: pointer;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.icon img {
+  height: 20px;
+}

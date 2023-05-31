@@ -6,17 +6,38 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet"> 
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
   
   <title>Frontend Mentor | Product preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <div class="wrapper">
+    <div class="img-container">
+      <img src="./images/image-product-desktop.jpg" alt="">
+    </div>
+    <div class="information">
+      <p class="product">
+        P&nbsp;&nbsp;E&nbsp;&nbsp;R&nbsp;&nbsp;F&nbsp;&nbsp;U&nbsp;&nbsp;M&nbsp;&nbsp;E
+      </p>
+      <h1 class="headline">Gabrielle Essence Eau De Parfum</h1>
+      <p class="copy">
+        A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL
+      </p>
+      <div class="price">
+        <p class="offer">$149.99</p>
+        <p class="price-tag">$169.99</p>
+      </div>
+      <button class="btn-checkout">
+        <span class="icon">
+          <img src="./images/icon-cart.svg" alt="cart icon">
+        </span>
+        <p class="btn-text">
+          Add to Cart
+        </p>
+      </button>
+    </div>
+  </div>
 </body>
 </html>
