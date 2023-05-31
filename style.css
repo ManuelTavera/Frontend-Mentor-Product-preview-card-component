@@ -6,6 +6,7 @@
     --white: hsl(0, 0%, 100%);
     --dark-green: hsl(158, 36%, 22%);
 }
+/* This css reset is from the Treasure Trove of Josh Comeau */
 /*
   1. Use a more-intuitive box-sizing model.
 */
